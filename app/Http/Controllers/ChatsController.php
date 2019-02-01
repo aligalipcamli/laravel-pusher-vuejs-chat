@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Events\MessageSent;
+use App\Message;
 
 class ChatsController extends Controller
 {
-  use App\Message;
-  use Illuminate\Http\Request;
-  use Illuminate\Support\Facades\Auth;
 
   public function __construct()
   {
